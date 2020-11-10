@@ -36,7 +36,7 @@ module.exports = class AWSProvider extends Plugin {
       companionHeaders: this.opts.companionHeaders || this.opts.serverHeaders,
       provider: 'aws',
       pluginId: this.id
-    })
+    });
 
     this.onFirstRender = this.onFirstRender.bind(this)
     this.render = this.render.bind(this)
